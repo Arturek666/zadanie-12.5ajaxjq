@@ -27,13 +27,10 @@ function createTweet(input) {
         $('.author').text("Author: " + quoteAuthor);
         $('.tweet').attr('href', tweet);
     }
-}
-
-
-
-$(document).ready(function() {
-    getQuote();
-    $('.trigger').click(function() {
+    $(document).ready(function() {
         getQuote();
-    })
-});
+        $('.trigger').click(function() {
+            getQuote();
+        })
+    });
+}
